@@ -10,6 +10,7 @@
         android:id="@+id/txtOutput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textSize="@dimen/txt_size"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:text="0" />
@@ -24,82 +25,79 @@
 
         <Button
             android:id="@+id/btnC"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_width="@dimen/square_btn"
+            android:layout_height="@dimen/square_btn"
+            android:textSize="@dimen/txt_size"
             android:text="@string/btn_c" />
 
         <Button
             android:id="@+id/btnSign"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_width="@dimen/square_btn"
+            android:layout_height="@dimen/square_btn"
+            android:textSize="@dimen/txt_size"
             android:text="@string/btn_sign" />
 
         <Button
             android:id="@+id/btnPercent"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_width="@dimen/square_btn"
+            android:layout_height="@dimen/square_btn"
+            android:textSize="@dimen/txt_size"
             android:text="@string/btn_percent" />
 
     </LinearLayout>
 
     <include
         layout="@layout/numbers_block"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_below="@id/actions_row"
-        android:layout_alignBottom="@id/actions_column"
         android:layout_alignParentLeft="true"
-        android:layout_toStartOf="@id/actions_column" />
+        android:layout_toStartOf="@id/actions_column"
+        />
 
     <LinearLayout
         android:id="@+id/actions_column"
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/txtOutput"
-        android:layout_alignParentRight="true"
-        android:layout_toEndOf="@id/actions_row"
+        android:layout_toRightOf="@id/actions_row"
         android:orientation="vertical"
 
         >
 
         <Button
             android:id="@+id/btnDivide"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:layout_below="@id/txtOutput"
-            android:layout_toEndOf="@id/actions_row"
+            android:layout_width="@dimen/square_btn"
+            android:layout_height="@dimen/square_btn"
+            android:textSize="@dimen/txt_size"
             android:text="@string/btn_divide" />
 
         <Button
             android:id="@+id/btnMultiply"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_width="@dimen/square_btn"
+            android:layout_height="@dimen/square_btn"
+            android:textSize="@dimen/txt_size"
             android:text="@string/btn_multiply" />
 
         <Button
             android:id="@+id/btnMinus"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_width="@dimen/square_btn"
+            android:layout_height="@dimen/square_btn"
+            android:textSize="@dimen/txt_size"
             android:text="@string/btn_minus" />
 
         <Button
             android:id="@+id/btnPlus"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_width="@dimen/square_btn"
+            android:layout_height="@dimen/square_btn"
+            android:textSize="@dimen/txt_size"
             android:text="@string/btn_plus" />
 
         <Button
             android:id="@+id/btnEqual"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_width="@dimen/square_btn"
+            android:layout_height="@dimen/square_btn"
+            android:textSize="@dimen/txt_size"
             android:text="@string/btn_equal" />
 
     </LinearLayout>
